@@ -79,7 +79,9 @@
     "build-storybook": "build-storybook",
     "prettier": "prettier --write \"{src,scripts,spec}/**/*.js\""
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
   "size-limit": [
     {
       "path": "dist-es/index.js",
